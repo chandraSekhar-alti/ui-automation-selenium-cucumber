@@ -1,0 +1,128 @@
+19:29:45.649 [main]INFO  com.dfh.cucumberHooks.Hooks - Setting up before the scenario
+19:29:50.231 [main]INFO  com.dfh.cucumberHooks.Hooks - Driver retrived from the hooks file successfully
+19:30:27.345 [main]INFO  com.dfh.cucumberHooks.Hooks - Running teardown after scenario
+19:48:27.792 [main]INFO  com.dfh.cucumberHooks.Hooks - Setting up before the scenario
+19:48:55.842 [main]INFO  com.dfh.cucumberHooks.Hooks - Driver retrived from the hooks file successfully
+19:48:56.334 [main]INFO  com.dfh.cucumberHooks.Hooks - Running teardown after scenario
+19:48:57.713 [main]INFO  com.dfh.cucumberHooks.Hooks - Browser closed !!!
+19:57:27.287 [main]INFO  com.dfh.cucumberHooks.Hooks - Setting up before the scenario
+19:57:28.737 [main]INFO  com.dfh.cucumberHooks.Hooks - Running teardown after scenario
+19:57:30.108 [main]INFO  com.dfh.cucumberHooks.Hooks - Browser closed !!!
+19:58:43.735 [main]INFO  com.dfh.cucumberHooks.Hooks - Setting up before the scenario
+19:58:45.071 [main]INFO  com.dfh.cucumberHooks.Hooks - Running teardown after scenario
+19:58:46.457 [main]INFO  com.dfh.cucumberHooks.Hooks - Browser closed !!!
+20:08:33.593 [main]INFO  com.dfh.cucumberHooks.Hooks - Setting up before the scenario
+20:08:37.384 [main]INFO  com.dfh.cucumberHooks.Hooks - Driver retrived from the hooks file successfully
+20:08:37.825 [main]INFO  com.dfh.cucumberHooks.Hooks - Running teardown after scenario
+20:08:39.066 [main]INFO  com.dfh.cucumberHooks.Hooks - Browser closed !!!
+09:59:45.142 [main]INFO  com.dfh.cucumberHooks.Hooks - Setting up before the scenario
+09:59:49.312 [main]INFO  com.dfh.cucumberHooks.Hooks - Driver retrived from the hooks file successfully
+09:59:50.545 [main]INFO  com.dfh.cucumberHooks.Hooks - Running teardown after scenario
+09:59:51.777 [main]INFO  com.dfh.cucumberHooks.Hooks - Browser closed !!!
+10:37:18.022 [main]INFO  com.dfh.cucumberHooks.Hooks - Setting up before the scenario
+10:37:21.753 [main]INFO  com.dfh.cucumberHooks.Hooks - Driver retrived from the hooks file successfully
+10:37:22.953 [main]INFO  com.dfh.cucumberHooks.Hooks - Running teardown after scenario
+10:37:24.217 [main]INFO  com.dfh.cucumberHooks.Hooks - Browser closed !!!
+10:40:14.190 [main]INFO  com.dfh.cucumberHooks.Hooks - Setting up before the scenario
+10:40:18.662 [main]INFO  com.dfh.cucumberHooks.Hooks - Driver retrived from the hooks file successfully
+10:40:19.863 [main]INFO  com.dfh.cucumberHooks.Hooks - Running teardown after scenario
+10:40:20.039 [main]INFO  com.dfh.cucumberHooks.Hooks - Browser closed !!!
+10:40:30.045 [main]INFO  com.dfh.cucumberHooks.Hooks - Setting up before the scenario
+10:40:33.043 [main]INFO  com.dfh.cucumberHooks.Hooks - Driver retrived from the hooks file successfully
+10:40:34.312 [main]INFO  com.dfh.cucumberHooks.Hooks - Running teardown after scenario
+10:40:34.448 [main]INFO  com.dfh.cucumberHooks.Hooks - Browser closed !!!
+10:40:43.856 [main]INFO  com.dfh.cucumberHooks.Hooks - Setting up before the scenario
+10:40:46.823 [main]INFO  com.dfh.cucumberHooks.Hooks - Driver retrived from the hooks file successfully
+10:40:48.063 [main]INFO  com.dfh.cucumberHooks.Hooks - Running teardown after scenario
+10:40:48.226 [main]INFO  com.dfh.cucumberHooks.Hooks - Browser closed !!!
+14:11:49.617 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+14:11:49.620 [main]INFO  com.dfh.cucumberHooks.Hooks - Driver retrived from the hooks file successfully
+14:11:49.624 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+14:13:47.533 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+14:13:47.537 [main]INFO  com.dfh.cucumberHooks.Hooks - Setting up before the scenario
+14:13:47.538 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+14:13:47.538 [main]INFO  com.dfh.utils.BrowserFactory - This will run before the scenario 
+14:13:52.045 [main]INFO  com.dfh.cucumberHooks.Hooks - Running tear down after scenario
+14:13:52.232 [main]INFO  com.dfh.cucumberHooks.Hooks - Browser closed !!!
+14:27:18.228 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+14:27:18.232 [main]INFO  com.dfh.cucumberHooks.Hooks - Setting up before the scenario
+14:27:18.234 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+14:27:18.247 [main]INFO  com.dfh.cucumberHooks.Hooks - Running tear down after scenario
+14:27:18.247 [main]INFO  com.dfh.cucumberHooks.Hooks - Browser closed !!!
+14:29:52.182 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+14:29:52.185 [main]INFO  com.dfh.cucumberHooks.Hooks - Setting up before the scenario
+14:29:52.186 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+14:29:52.193 [main]INFO  com.dfh.cucumberHooks.Hooks - Running tear down after scenario
+14:29:52.193 [main]INFO  com.dfh.cucumberHooks.Hooks - Browser closed !!!
+14:30:36.165 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+14:30:36.168 [main]INFO  com.dfh.cucumberHooks.Hooks - Setting up before the scenario
+14:30:36.169 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+14:30:36.176 [main]INFO  com.dfh.cucumberHooks.Hooks - Running tear down after scenario
+14:30:36.176 [main]INFO  com.dfh.cucumberHooks.Hooks - Browser closed !!!
+14:32:48.195 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+14:32:48.201 [main]INFO  com.dfh.cucumberHooks.Hooks - Setting up before the scenario
+14:32:48.202 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+14:32:48.216 [main]INFO  com.dfh.cucumberHooks.Hooks - Running tear down after scenario
+14:32:48.216 [main]INFO  com.dfh.cucumberHooks.Hooks - Browser closed !!!
+14:33:18.441 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+14:33:18.448 [main]INFO  com.dfh.cucumberHooks.Hooks - Setting up before the scenario
+14:33:30.752 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+14:46:12.714 [main]INFO  com.dfh.cucumberHooks.Hooks - Running tear down after scenario
+14:46:12.715 [main]INFO  com.dfh.cucumberHooks.Hooks - Browser closed !!!
+14:46:17.094 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+14:46:17.101 [main]INFO  com.dfh.cucumberHooks.Hooks - Setting up before the scenario
+14:46:39.199 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+14:46:44.486 [main]INFO  com.dfh.cucumberHooks.Hooks - Running tear down after scenario
+14:46:44.486 [main]INFO  com.dfh.cucumberHooks.Hooks - Browser closed !!!
+15:11:55.316 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+15:11:55.321 [main]INFO  com.dfh.cucumberHooks.Hooks - Setting up before the scenario
+15:11:55.322 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+15:11:55.332 [main]INFO  com.dfh.cucumberHooks.Hooks - Running tear down after scenario
+15:11:55.332 [main]INFO  com.dfh.cucumberHooks.Hooks - Browser closed !!!
+16:45:19.739 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+16:45:19.742 [main]INFO  com.dfh.cucumberHooks.Hooks - Driver retrived from the hooks file successfully
+16:45:19.752 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+23:16:19.518 [main]INFO  com.dfh.hooks.Hooks - Hooks started
+23:16:19.521 [main]INFO  com.dfh.hooks.Hooks - running setup() function
+23:16:19.531 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+23:16:19.553 [main]INFO  com.dfh.hooks.Hooks - running launchApplication() function
+23:17:41.446 [main]INFO  com.dfh.hooks.Hooks - Hooks started
+23:17:41.452 [main]INFO  com.dfh.hooks.Hooks - running setup() function
+23:17:41.470 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+23:18:04.284 [main]INFO  com.dfh.hooks.Hooks - running launchApplication() function
+23:48:40.428 [main]INFO  com.dfh.hooks.Hooks - Hooks started
+23:48:40.431 [main]INFO  com.dfh.hooks.Hooks - running setup() function
+23:48:40.450 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+23:48:57.178 [main]INFO  com.dfh.hooks.Hooks - running launchApplication() function
+23:51:02.353 [main]INFO  com.dfh.hooks.Hooks - Hooks started
+23:51:02.356 [main]INFO  com.dfh.hooks.Hooks - running setup() function
+23:51:02.367 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+23:51:16.950 [main]INFO  com.dfh.hooks.Hooks - running launchApplication() function
+23:54:17.154 [main]INFO  com.dfh.hooks.Hooks - Hooks started
+23:54:17.158 [main]INFO  com.dfh.hooks.Hooks - running setup() function
+23:54:17.170 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+23:54:33.711 [main]INFO  com.dfh.hooks.Hooks - running launchApplication() function
+23:57:56.001 [main]INFO  com.dfh.hooks.Hooks - Hooks started
+23:57:56.004 [main]INFO  com.dfh.hooks.Hooks - running setup() function
+23:57:56.012 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+23:58:10.566 [main]INFO  com.dfh.hooks.Hooks - running launchApplication() function
+00:08:58.330 [main]INFO  com.dfh.hooks.Hooks - Hooks started
+00:08:58.340 [main]INFO  com.dfh.hooks.Hooks - running setup() function
+00:08:58.348 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+00:09:13.421 [main]INFO  com.dfh.hooks.Hooks - running launchApplication() function
+00:09:20.311 [main]INFO  com.dfh.hooks.Hooks - Running teardown functionality
+00:20:18.987 [main]INFO  com.dfh.hooks.Hooks - Hooks started
+00:20:18.990 [main]INFO  com.dfh.hooks.Hooks - running setup() function
+00:20:18.998 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+00:20:35.639 [main]INFO  com.dfh.hooks.Hooks - running launchApplication() function
+00:20:42.661 [main]INFO  com.dfh.hooks.Hooks - Running teardown functionality
+00:23:57.445 [main]INFO  com.dfh.hooks.Hooks - Hooks started
+00:23:57.454 [main]INFO  com.dfh.hooks.Hooks - running setup() function
+00:23:57.465 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+00:24:14.449 [main]INFO  com.dfh.hooks.Hooks - running launchApplication() function
+00:26:02.950 [main]INFO  com.dfh.hooks.Hooks - Running teardown functionality
+00:27:44.146 [main]INFO  com.dfh.hooks.Hooks - Hooks started
+00:27:44.150 [main]INFO  com.dfh.hooks.Hooks - running setup() function
+00:27:44.160 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+00:27:59.513 [main]INFO  com.dfh.hooks.Hooks - running launchApplication() function
+00:28:09.157 [main]INFO  com.dfh.hooks.Hooks - Running teardown functionality
