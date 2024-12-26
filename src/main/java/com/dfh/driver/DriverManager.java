@@ -6,20 +6,20 @@ public class DriverManager {
 
     private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-    private DriverManager(){
+    private DriverManager() {
         super();
     }
 
-    public static WebDriver getDriver(){
+    public static WebDriver getDriver() {
         return driver.get();
     }
 
-    public static void setDriver(WebDriver driver){
+    public static void setDriver(WebDriver driver) {
         DriverManager.driver.set(driver);
     }
 
-    public static void quite(){
-        if (DriverManager.getDriver() != null){
+    public static void quit() {
+        if (DriverManager.getDriver() != null) {
             DriverManager.getDriver().quit();
         }
     }
