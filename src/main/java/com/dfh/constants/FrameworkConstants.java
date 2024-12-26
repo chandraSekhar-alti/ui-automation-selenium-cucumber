@@ -3,10 +3,8 @@ package com.dfh.constants;
 import com.dfh.utils.PropertyLoader;
 
 import java.util.Properties;
-import java.util.logging.Logger;
 
 public final class FrameworkConstants {
-    private static final Logger LOGGER = Logger.getLogger(FrameworkConstants.class.getName());
     private static final Properties properties;
 
     static {
@@ -33,7 +31,9 @@ public final class FrameworkConstants {
     public static final int IMPLICIT_WAIT = getRequiredIntProperty("waitImplicit");
     public static final int EXPLICIT_WAIT = getRequiredIntProperty("waitExplicit");
     public static final int FLUENT_WAIT = getRequiredIntProperty("waitFluent");
-//    public static final int DEFAULT_WAIT = getRequiredIntProperty("waitDefault");
+    public static final int SMALL_WAIT_DURATION = getRequiredIntProperty("smallWaitDuration");
+    public static final int MEDIUM_WAIT_DURATION = getRequiredIntProperty("mediumWaitDuration");
+    public static final int LARGE_WAIT_DURATION = getRequiredIntProperty("largeWaitDuration");
     public static final String TARGET = properties.getProperty("target");
     public static final String REMOTE_URL = properties.getProperty("remoteUrl");
     public static final String REMOTE_PORT = properties.getProperty("remotePort");

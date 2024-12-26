@@ -126,3 +126,15 @@
 00:27:44.160 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
 00:27:59.513 [main]INFO  com.dfh.hooks.Hooks - running launchApplication() function
 00:28:09.157 [main]INFO  com.dfh.hooks.Hooks - Running teardown functionality
+12:24:10.765 [main]INFO  com.dfh.hooks.Hooks - Hooks started
+12:24:10.768 [main]INFO  com.dfh.hooks.Hooks - running setup() function
+12:24:10.776 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+12:24:28.777 [main]INFO  com.dfh.hooks.Hooks - running launchApplication() function
+12:24:33.448 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/auth/login
+12:24:33.745 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='button' and text()='Agent']
+12:24:34.001 [main]INFO  com.dfh.utils.Actions - Set text kalyan on By.xpath: //input[@name='username']
+12:24:34.338 [main]INFO  com.dfh.utils.Actions - Set text kalyan@123 on By.xpath: //input[@type='password']
+12:24:34.610 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='submit' and text()='Login']
+12:24:36.252 [main]INFO  com.dfh.utils.Actions - Set text 433332 on By.xpath: //form/descendant::input
+12:24:36.692 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/descendant::button
+12:24:36.696 [main]INFO  com.dfh.hooks.Hooks - Running teardown functionality

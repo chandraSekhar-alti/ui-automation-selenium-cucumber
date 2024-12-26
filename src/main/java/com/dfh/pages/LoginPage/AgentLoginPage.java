@@ -1,14 +1,19 @@
 package com.dfh.pages.LoginPage;
 
 import com.dfh.constants.FrameworkConstants;
+import com.dfh.utils.Actions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class AgentLoginPage {
 
     public WebDriver driver;
+    private Actions actions;
+
+
     public AgentLoginPage(WebDriver driver){
         this.driver = driver;
+        actions = new Actions(driver);
     }
 
     private static final By agentEmailAddress = By.xpath("//input[@name='username']");
@@ -18,13 +23,13 @@ public class AgentLoginPage {
 
 
     public void enterUserName(String userEmailAddress){
-        driver.findElement(agentEmailAddress).isDisplayed();
-        driver.findElement(agentEmailAddress).sendKeys(userEmailAddress);
+        actions.isElementVisible(agentEmailAddress);
+        actions.setText(agentEmailAddress,userEmailAddress );
     }
 
     public void enterPassword(String userPassword){
-        driver.findElement(agentPassword).isDisplayed();
-        driver.findElement(agentPassword).sendKeys(userPassword);
+        actions.isElementVisible(agentPassword);
+        actions.setText(agentPassword,userPassword);
     }
 
     public void enterUserDetails(String userEmailAddress, String userPassword){
@@ -32,18 +37,18 @@ public class AgentLoginPage {
     }
 
     public void clickOnLoginButton(){
-        driver.findElement(agentLoginButton).isDisplayed();
-        driver.findElement(agentLoginButton).click();
+        actions.isElementVisible(agentLoginButton);
+        actions.clickElement(agentLoginButton);
     }
 
     public void clickOnAgentTab(){
-        driver.findElement(agentButton).isDisplayed();
-        driver.findElement(agentButton).click();
+        actions.isElementVisible(agentButton);
+        actions.clickElement(agentButton);
     }
 
     public void launchApplication() throws InterruptedException {
-        driver.navigate().to(FrameworkConstants.APPLICATION_URL);
-        Thread.sleep(5000);
+        actions.launchURL(FrameworkConstants.APPLICATION_URL);
+        actions.waitForPageLoaded(FrameworkConstants.MEDIUM_WAIT_DURATION);
     }
 
     public void signInToApplication(String userName, String password){

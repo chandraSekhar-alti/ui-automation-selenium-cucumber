@@ -1,13 +1,17 @@
 package com.dfh.pages.LoginPage;
 
+import com.dfh.utils.Actions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class CustomerLoginPage {
 
     public WebDriver driver;
+    private Actions actions;
+
     public CustomerLoginPage(WebDriver driver){
         this.driver = driver;
+        actions = new Actions(driver);
     }
 
     private static final By customerIdInputField = By.xpath("//input[@name='clientId']");
@@ -15,13 +19,13 @@ public class CustomerLoginPage {
 
 
     public void enterCustomerId(String customerId){
-        driver.findElement(customerIdInputField).isDisplayed();
-        driver.findElement(customerIdInputField).sendKeys(customerId);
+        actions.isElementVisible(customerIdInputField);
+        actions.setText(customerIdInputField, customerId);
     }
 
     public void clickOnSubmitButton(){
-        driver.findElement(customerSubmitButton).isDisplayed();
-        driver.findElement(customerSubmitButton).click();
+        actions.isElementVisible(customerSubmitButton);
+        actions.clickElement(customerSubmitButton);
     }
 
 }

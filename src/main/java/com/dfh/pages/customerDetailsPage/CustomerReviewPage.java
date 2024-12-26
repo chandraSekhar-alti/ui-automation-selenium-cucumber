@@ -1,13 +1,16 @@
 package com.dfh.pages.customerDetailsPage;
 
+import com.dfh.utils.Actions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class CustomerReviewPage {
     WebDriver driver;
+    private Actions actions;
 
     public CustomerReviewPage(WebDriver driver){
         this.driver = driver;
+        actions =  new Actions(driver);
     }
 
     private final By reviewPageTitle = By.xpath("//main/descendant::div/h2");
@@ -16,16 +19,16 @@ public class CustomerReviewPage {
     private final By submitButton  = By.xpath("//form/descendant::button");
 
     public void enterCustomerId(String customerId){
-        driver.findElement(reviewPageTitle).isDisplayed();
-        driver.findElement(customerIdTitle).isDisplayed();
-        driver.findElement(customerIdInputField).isDisplayed();
-        driver.findElement(customerIdInputField).sendKeys(customerId);
+        actions.isElementVisible(reviewPageTitle);
+        actions.isElementVisible(customerIdTitle);
+        actions.isElementVisible(customerIdInputField);
+        actions.setText(customerIdInputField, customerId);
     }
 
     public void clickOnSubmitButton(){
-        driver.findElement(submitButton).isDisplayed();
-        driver.findElement(submitButton).isEnabled();
-        driver.findElement(submitButton).click();
+        actions.isElementVisible(submitButton);
+        actions.waitForElementClickable(submitButton);
+        actions.clickElement(submitButton);
     }
 
     public void enterCustomerDetailsAndClickOnSubmitButton(String customerId){
