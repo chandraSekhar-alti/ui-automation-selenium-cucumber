@@ -1,8 +1,20 @@
 package com.dfh.utils;
 
+import com.dfh.constants.FrameworkConstants;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.time.Duration;
+
 public class Assertions {
+
+    private static final Logger log = LogManager.getLogger(Assertions.class);
+
 
     public static void assertTrue(boolean condition, String message) {
         Assert.assertTrue(condition, message);
@@ -304,6 +316,61 @@ public class Assertions {
     public static void assertEqualsWithTolerance(double actual, double expected, double tolerance, String message) {
         Assert.assertTrue(Math.abs(actual - expected) <= tolerance, message);
     }
+
+    /**
+     * Validates the current page URL with the expected URL.
+     *
+     * @param actualUrl   the current page URL
+     * @param expectedUrl the expected URL
+     * @throws IllegalArgumentException if either actualUrl or expectedUrl is null
+     * @throws AssertionError           if the URLs do not match
+     */
+    public void assertUrl(String actualUrl, String expectedUrl) {
+
+        if (actualUrl == null || expectedUrl == null) {
+            throw new IllegalArgumentException("Actual URL and Expected URL must not be null");
+        }
+
+        try {
+            Assert.assertEquals(actualUrl, expectedUrl, "Actual URL is not matching with the Expected URL ");
+            log.info("Url validation passed: " + actualUrl);
+        } catch (AssertionError e) {
+            log.error("Url validation failed");
+            log.error("Expected Url : {}", expectedUrl);
+            log.error("Actual Url : {}", actualUrl);
+            throw e;
+        }
+    }
+
+    /**
+     * Validates the current page URL with the expected URL.
+     *
+     * @param expectedUrl the expected URL
+     * @throws IllegalArgumentException if either actualUrl or expectedUrl is null
+     * @throws AssertionError           if the URLs do not match
+     */
+    public void assertCurrentPageUrl(WebDriver driver, String expectedUrl) {
+        try {
+            // Wait for the URL to match the expected one
+            new WebDriverWait(driver, Duration.ofSeconds(FrameworkConstants.SMALL_WAIT_DURATION)) // Set desired wait time
+                    .until(ExpectedConditions.urlToBe(expectedUrl));
+
+            String currentUrl = driver.getCurrentUrl();
+            Assert.assertEquals(currentUrl, expectedUrl, "Actual URL is not matching with the Expected URL");
+            log.info("URL validation passed: " + currentUrl);
+        } catch (TimeoutException e) {
+            log.error("URL validation failed due to timeout");
+            log.error("Expected URL: {}", expectedUrl);
+            log.error("Current URL: {}", driver.getCurrentUrl());
+            throw new AssertionError("Timeout waiting for URL to be: " + expectedUrl, e);
+        } catch (AssertionError e) {
+            log.error("URL validation failed");
+            log.error("Expected URL: {}", expectedUrl);
+            log.error("Current URL: {}", driver.getCurrentUrl());
+            throw e;
+        }
+    }
+
 
     /**
      * Assert that a string is not empty

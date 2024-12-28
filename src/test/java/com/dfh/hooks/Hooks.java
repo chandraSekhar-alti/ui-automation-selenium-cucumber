@@ -45,6 +45,8 @@ public class Hooks {
         commonPages.getAgentLoginPage().signInToApplication(FrameworkConstants.AGENT_NAME, FrameworkConstants.AGENT_PASSWORD);
         commonPages.getCustomerReviewPage().enterCustomerDetailsAndClickOnSubmitButton(FrameworkConstants.AGENT_ID);
         log.info("Login to the application successfully !");
+
+        commonPages.getSummaryPage().launchSummaryPage();
     }
 
     @After

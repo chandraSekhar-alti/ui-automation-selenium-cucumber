@@ -1,6 +1,7 @@
 package com.dfh.utils;
 
 import com.dfh.driver.DriverManager;
+import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
@@ -134,15 +135,36 @@ public class Actions {
      * @param by Locator of the element (By object)
      * @return WebElement once it is visible and displayed, or null if there is an error
      */
-    public WebElement waitForElementDisplayed(By by) {
+    public WebElement isElementDisplayed(By by) {
         WebElement element = waitForElementPresent(by);
         if (element != null && element.isDisplayed()) {
+            highlightElementByGreen(by);
             return element;
         } else {
             log.error("❌ Element not visible: " + by.toString());
             Assert.fail("❌ Element not visible: " + by.toString());
             return null;
         }
+    }
+
+    /**
+     * Highlights a single web element by adding a green border.
+     *
+     * @param element The web element to highlight.
+     */
+    public void highlightElementByGreen(WebElement element) {
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        jsExecutor.executeScript("arguments[0].style.border = '3px solid green';", element);
+    }
+
+    /**
+     * Highlights a web element located by the specified locator by adding a green border.
+     *
+     * @param locator The locator of the web element to highlight.
+     */
+    public void highlightElementByGreen(By locator) {
+        WebElement element = driver.findElement(locator);
+        highlightElementByGreen(element);
     }
 
 
@@ -182,7 +204,7 @@ public class Actions {
         }
     }
 
-    //@Step("Check if element is visible ")
+    @Step("Check if element is visible ")
     public boolean isElementVisible(By by) {
         try {
             new WebDriverWait(driver, Duration.ofSeconds(DEFAULT_TIMEOUT)).until(ExpectedConditions.visibilityOfElementLocated(by));
@@ -578,7 +600,7 @@ public class Actions {
      *
      * @return the current URL as String
      */
-    //@Step("Get Current URL")
+    @Step("Get Current URL")
     public String getCurrentUrl() {
         log.info("Get Current URL: " + driver.getCurrentUrl());
         return driver.getCurrentUrl();

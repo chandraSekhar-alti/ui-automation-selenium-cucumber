@@ -18,25 +18,25 @@ public final class FrameworkConstants {
         // Prevent instantiation
     }
 
-    public static final String APPLICATION_URL = getRequiredProperty("appUrl");
-    public static final String CUSTOMER_PAGE_DETAILS_URL = getRequiredProperty("customerDetailsPageUrl");
-    public static final String HEADLESS = getRequiredProperty("headless");
-    public static final String BROWSER = getRequiredProperty("browserName");
-    public static final int BROWSER_HEIGHT = getRequiredIntProperty("browserHeight");
-    public static final int BROWSER_WIDTH = getRequiredIntProperty("browserWidth");
+    public static final String APPLICATION_URL = getRequiredProperty("APP_URL");
+    public static final String APP_BASE_URL = getRequiredProperty("APP_BASE_URL");
+    public static final String HEADLESS = getRequiredProperty("HEADLESS");
+    public static final String BROWSER = getRequiredProperty("BROWSER_NAME");
+    public static final int BROWSER_HEIGHT = getRequiredIntProperty("BROWSER_HEIGHT");
+    public static final int BROWSER_WIDTH = getRequiredIntProperty("BROWSER_WIDTH");
 
-    public static final String AGENT_NAME = getRequiredProperty("userName");
-    public static final String AGENT_PASSWORD = getRequiredProperty("password");
-    public static final String AGENT_ID = getRequiredProperty("agentId");
-    public static final int IMPLICIT_WAIT = getRequiredIntProperty("waitImplicit");
-    public static final int EXPLICIT_WAIT = getRequiredIntProperty("waitExplicit");
-    public static final int FLUENT_WAIT = getRequiredIntProperty("waitFluent");
-    public static final int SMALL_WAIT_DURATION = getRequiredIntProperty("smallWaitDuration");
-    public static final int MEDIUM_WAIT_DURATION = getRequiredIntProperty("mediumWaitDuration");
-    public static final int LARGE_WAIT_DURATION = getRequiredIntProperty("largeWaitDuration");
-    public static final String TARGET = properties.getProperty("target");
-    public static final String REMOTE_URL = properties.getProperty("remoteUrl");
-    public static final String REMOTE_PORT = properties.getProperty("remotePort");
+    public static final String AGENT_NAME = getRequiredProperty("USER_NAME");
+    public static final String AGENT_PASSWORD = getRequiredProperty("USER_PASSWORD");
+    public static final String AGENT_ID = getRequiredProperty("AGENT_ID");
+    public static final int IMPLICIT_WAIT = getRequiredIntProperty("WAIT_IMPLICIT");
+    public static final int EXPLICIT_WAIT = getRequiredIntProperty("WAIT_EXPLICIT");
+    public static final int FLUENT_WAIT = getRequiredIntProperty("WAIT_FLUENT");
+    public static final int SMALL_WAIT_DURATION = getRequiredIntProperty("SMALL_WAIT_DURATION");
+    public static final int MEDIUM_WAIT_DURATION = getRequiredIntProperty("MEDIUM_WAIT_DURATION");
+    public static final int LARGE_WAIT_DURATION = getRequiredIntProperty("LARGE_WAIT_DURATION");
+    public static final String TARGET = properties.getProperty("TARGET");
+    public static final String REMOTE_URL = properties.getProperty("REMOTE_URL");
+    public static final String REMOTE_PORT = properties.getProperty("REMOTE_PORT");
 
 
     private static String getRequiredProperty(String key) {

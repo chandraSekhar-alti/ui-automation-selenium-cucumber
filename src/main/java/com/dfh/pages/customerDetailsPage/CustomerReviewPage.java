@@ -19,14 +19,14 @@ public class CustomerReviewPage {
     private final By submitButton  = By.xpath("//form/descendant::button");
 
     public void enterCustomerId(String customerId){
-        actions.isElementVisible(reviewPageTitle);
-        actions.isElementVisible(customerIdTitle);
-        actions.isElementVisible(customerIdInputField);
+        actions.isElementDisplayed(reviewPageTitle);
+        actions.isElementDisplayed(customerIdTitle);
+        actions.isElementDisplayed(customerIdInputField);
         actions.setText(customerIdInputField, customerId);
     }
 
     public void clickOnSubmitButton(){
-        actions.isElementVisible(submitButton);
+        actions.isElementDisplayed(submitButton);
         actions.waitForElementClickable(submitButton);
         actions.clickElement(submitButton);
     }
