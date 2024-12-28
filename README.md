@@ -4,4 +4,4 @@ This repository contains a robust framework for automating UI tests using Seleni
 ### allure generate target/allure-results --clean -o target/allure-report
 
 
-### allure open
+### allure open target/allure-report
