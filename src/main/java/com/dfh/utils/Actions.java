@@ -448,7 +448,7 @@ public class Actions {
      * @return text of a element
      */
     //@Step("Get text of element ")
-    public String getTextElement(By by) {
+    public String getElementText(By by) {
         return waitForElementVisible(by).getText().trim();
     }
 

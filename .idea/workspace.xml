@@ -5,21 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d890b25-f45e-4d6b-8fcf-f4c51e34cdad" name="Changes" comment="updated browser setup">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dfh/Exceptions/SummaryPageException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dfh/pages/householdPage/HouseHoldPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dfh/pages/summaryPage/SummaryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dfh/Exceptions/HouseholdPageException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dfh/constants/FrameworkConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dfh/constants/FrameworkConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dfh/pages/CommonPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dfh/pages/CommonPages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dfh/pages/LoginPage/AgentLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dfh/pages/LoginPage/AgentLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dfh/pages/customerDetailsPage/CustomerReviewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dfh/pages/customerDetailsPage/CustomerReviewPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dfh/stepdefinitions/AgentLoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dfh/stepdefinitions/SummarySteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dfh/pages/householdPage/HouseHoldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dfh/pages/householdPage/HouseHoldPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dfh/pages/summaryPage/SummaryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dfh/pages/summaryPage/SummaryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dfh/stepdefinitions/SummarySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dfh/stepdefinitions/SummarySteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dfh/utils/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dfh/utils/Actions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dfh/utils/Assertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dfh/utils/Assertions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dfh/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dfh/hooks/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/configurations.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configurations.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AgentLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Summary.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Summary.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Summary.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Exception" />
         <option value="Class" />
+        <option value="Exception" />
       </list>
     </option>
   </component>
@@ -64,7 +61,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Cucumber Java.Scenario: Validate error handling when no selection is made.executor": "Run",
     "Cucumber Java.Scenario: Validate the Summary page functionality.executor": "Run",
+    "Cucumber Java.Scenario: Validate visibility of all components on the summary page.executor": "Run",
     "JUnit.TestRunner.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -81,6 +80,26 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.TestRunner">
+    <configuration name="Scenario: Validate error handling when no selection is made" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Summary.feature" />
+      <option name="GLUE" value="com.dfh.stepdefinitions com.dfh.hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="DFH-Review-Portal-Automation" />
+      <option name="NAME_FILTER" value="^Validate error handling when no selection is made$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate error handling when no selection is made$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Validate error handling when no selection is made" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Validate the Summary page functionality" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Summary.feature" />
@@ -90,6 +109,26 @@
       <option name="NAME_FILTER" value="^Validate the Summary page functionality$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate the Summary page functionality$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: Validate the Summary page functionality" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Validate visibility of all components on the summary page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Summary.feature" />
+      <option name="GLUE" value="com.dfh.stepdefinitions com.dfh.hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="DFH-Review-Portal-Automation" />
+      <option name="NAME_FILTER" value="^Validate visibility of all components on the summary page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate visibility of all components on the summary page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Validate visibility of all components on the summary page" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -119,6 +158,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Validate visibility of all components on the summary page" />
+        <item itemvalue="Cucumber Java.Scenario: Validate error handling when no selection is made" />
         <item itemvalue="Cucumber Java.Scenario: Validate the Summary page functionality" />
       </list>
     </recent_temporary>
@@ -157,5 +198,29 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated browser setup" />
     <option name="LAST_COMMIT_MESSAGE" value="updated browser setup" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dfh/utils/Assertions.java</url>
+          <line>26</line>
+          <properties class="com.dfh.utils.Assertions" method="assertText">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dfh/stepdefinitions/SummarySteps.java</url>
+          <line>67</line>
+          <properties class="com.dfh.stepdefinitions.SummarySteps" method="theFollowingComponentsShouldBeVisible">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

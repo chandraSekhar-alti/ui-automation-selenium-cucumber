@@ -1,11 +1,11 @@
 package com.dfh.pages.householdPage;
 
 import com.dfh.constants.FrameworkConstants;
-import com.dfh.pages.summaryPage.SummaryPage;
 import com.dfh.utils.Actions;
 import com.dfh.utils.Assertions;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class HouseHoldPage {
@@ -20,8 +20,15 @@ public class HouseHoldPage {
     public HouseHoldPage(WebDriver driver) {
         this.driver = driver;
         actions = new Actions(driver);
-        assertions = new Assertions();
+        assertions = new Assertions(driver);
     }
+
+    // implement locators in this section
+    private final static By householdText = By.xpath("//h2[contains(@class, 'text-2xl') and contains(@class, 'sm:text-left')]");
+//    private final static By householdText= By.xpath("//h2[contains(@class, 'text-2xl') and contains(@class, 'sm:text-left')]");
+//    private final static By householdText= By.xpath("//h2[contains(@class, 'text-2xl') and contains(@class, 'sm:text-left')]");
+//    private final static By householdText= By.xpath("//h2[contains(@class, 'text-2xl') and contains(@class, 'sm:text-left')]");
+
 
     public void launchHouseholdPage() {
         actions.launchURL(householdPageUrl);
@@ -30,7 +37,11 @@ public class HouseHoldPage {
         log.info("Navigated to household page successfully");
     }
 
-    public void validateHouseholdPageUrl(){
+    public void validateHouseholdPageUrl() {
         assertions.assertCurrentPageUrl(driver, householdPageUrl);
+    }
+
+    public void checkVisibilityOfHouseholdText() {
+        actions.isElementDisplayed(householdText);
     }
 }

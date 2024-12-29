@@ -3,6 +3,7 @@ package com.dfh.utils;
 import com.dfh.constants.FrameworkConstants;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,10 +14,27 @@ import java.time.Duration;
 
 public class Assertions {
 
-    private static final Logger log = LogManager.getLogger(Assertions.class);
+    private static Logger log;
+    private WebDriver driver;
+    private Actions actions;
 
+    public Assertions(WebDriver driver) {
+        this.driver = driver;
+        log = LogManager.getLogger(Assertions.class);
+        actions = new Actions(driver);
+    }
 
-    public static void assertTrue(boolean condition, String message) {
+    public void assertText(By elementLocator, String expectedText) {
+        actions.isElementDisplayed(elementLocator);
+        String actualText = actions.getElementText(elementLocator);
+        Assert.assertEquals(
+                actualText,
+                expectedText,
+                "Text mismatch for " + elementLocator.toString() + " Actual: " + actualText + ", Expected: " + expectedText);
+        log.info("Text validation passed for {}", actualText);
+    }
+
+    public void assertTrue(boolean condition, String message) {
         Assert.assertTrue(condition, message);
     }
 
@@ -26,7 +44,7 @@ public class Assertions {
      * @param condition The condition to evaluate
      * @param message   The message to display if the assertion fails
      */
-    public static void assertFalse(boolean condition, String message) {
+    public void assertFalse(boolean condition, String message) {
         Assert.assertFalse(condition, message);
     }
 
@@ -37,9 +55,10 @@ public class Assertions {
      * @param expected The expected value
      * @param message  The message to display if the assertion fails
      */
-    public static void assertEquals(Object actual, Object expected, String message) {
+    public void assertEquals(Object actual, Object expected, String message) {
         Assert.assertEquals(actual, expected, message);
     }
+
 
     /**
      * Assert that two objects are equal
@@ -47,7 +66,7 @@ public class Assertions {
      * @param actual   The actual value
      * @param expected The expected value
      */
-    public static void assertEquals(Object actual, Object expected) {
+    public void assertEquals(Object actual, Object expected) {
         Assert.assertEquals(actual, expected);
     }
 
@@ -59,7 +78,7 @@ public class Assertions {
      * @param expected The expected value
      * @param message  The message to display if the assertion fails
      */
-    public static void assertNotEquals(Object actual, Object expected, String message) {
+    public void assertNotEquals(Object actual, Object expected, String message) {
         Assert.assertNotEquals(actual, expected, message);
     }
 
@@ -70,7 +89,7 @@ public class Assertions {
      * @param expected The expected object
      * @param message  The message to display if the assertion fails
      */
-    public static void assertSame(Object actual, Object expected, String message) {
+    public void assertSame(Object actual, Object expected, String message) {
         Assert.assertSame(actual, expected, message);
     }
 
@@ -81,7 +100,7 @@ public class Assertions {
      * @param expected The expected object
      * @param message  The message to display if the assertion fails
      */
-    public static void assertNotSame(Object actual, Object expected, String message) {
+    public void assertNotSame(Object actual, Object expected, String message) {
         Assert.assertNotSame(actual, expected, message);
     }
 
@@ -91,7 +110,7 @@ public class Assertions {
      * @param object  The object to evaluate
      * @param message The message to display if the assertion fails
      */
-    public static void assertNull(Object object, String message) {
+    public void assertNull(Object object, String message) {
         Assert.assertNull(object, message);
     }
 
@@ -101,7 +120,7 @@ public class Assertions {
      * @param object  The object to evaluate
      * @param message The message to display if the assertion fails
      */
-    public static void assertNotNull(Object object, String message) {
+    public void assertNotNull(Object object, String message) {
         Assert.assertNotNull(object, message);
     }
 
@@ -112,7 +131,7 @@ public class Assertions {
      * @param expected The expected array
      * @param message  The message to display if the assertion fails
      */
-    public static void assertArrayEquals(int[] actual, int[] expected, String message) {
+    public void assertArrayEquals(int[] actual, int[] expected, String message) {
         Assert.assertEquals(actual, expected, message);
     }
 
@@ -123,7 +142,7 @@ public class Assertions {
      * @param expected The expected array
      * @param message  The message to display if the assertion fails
      */
-    public static void assertArrayNotEquals(int[] actual, int[] expected, String message) {
+    public void assertArrayNotEquals(int[] actual, int[] expected, String message) {
         Assert.assertNotEquals(actual, expected, message);
     }
 
@@ -134,7 +153,7 @@ public class Assertions {
      * @param expected The expected array
      * @param message  The message to display if the assertion fails
      */
-    public static void assertArrayEquals(Object[] actual, Object[] expected, String message) {
+    public void assertArrayEquals(Object[] actual, Object[] expected, String message) {
         Assert.assertEquals(actual, expected, message);
     }
 
@@ -145,7 +164,7 @@ public class Assertions {
      * @param expected The expected array
      * @param message  The message to display if the assertion fails
      */
-    public static void assertArrayNotEquals(Object[] actual, Object[] expected, String message) {
+    public void assertArrayNotEquals(Object[] actual, Object[] expected, String message) {
         Assert.assertNotEquals(actual, expected, message);
     }
 
@@ -157,7 +176,7 @@ public class Assertions {
      * @param message  The message to display if the assertion fails
      */
 
-    public static void assertEqualsIgnoreCase(String actual, String expected, String message) {
+    public void assertEqualsIgnoreCase(String actual, String expected, String message) {
         Assert.assertEquals(actual, expected, message);
     }
 
@@ -168,7 +187,7 @@ public class Assertions {
      * @param expected The string expected to be contained
      * @param message  The message to display if the assertion fails
      */
-    public static void assertContains(String actual, String expected, String message) {
+    public void assertContains(String actual, String expected, String message) {
         Assert.assertTrue(actual.contains(expected), message);
     }
 
@@ -179,7 +198,7 @@ public class Assertions {
      * @param prefix  The prefix to check
      * @param message The message to display if the assertion fails
      */
-    public static void assertStartsWith(String actual, String prefix, String message) {
+    public void assertStartsWith(String actual, String prefix, String message) {
         Assert.assertTrue(actual.startsWith(prefix), message);
     }
 
@@ -190,7 +209,7 @@ public class Assertions {
      * @param suffix  The suffix to check
      * @param message The message to display if the assertion fails
      */
-    public static void assertEndsWith(String actual, String suffix, String message) {
+    public void assertEndsWith(String actual, String suffix, String message) {
         Assert.assertTrue(actual.endsWith(suffix), message);
     }
 
@@ -201,7 +220,7 @@ public class Assertions {
      * @param expected The expected collection
      * @param message  The message to display if the assertion fails
      */
-    public static void assertEquals(java.util.Collection<?> actual, java.util.Collection<?> expected, String message) {
+    public void assertEquals(java.util.Collection<?> actual, java.util.Collection<?> expected, String message) {
         Assert.assertEquals(actual, expected, message);
     }
 
@@ -212,7 +231,7 @@ public class Assertions {
      * @param expected The expected collection
      * @param message  The message to display if the assertion fails
      */
-    public static void assertNotEquals(java.util.Collection<?> actual, java.util.Collection<?> expected, String message) {
+    public void assertNotEquals(java.util.Collection<?> actual, java.util.Collection<?> expected, String message) {
         Assert.assertNotEquals(actual, expected, message);
     }
 
@@ -223,7 +242,7 @@ public class Assertions {
      * @param element    The element to find
      * @param message    The message to display if the assertion fails
      */
-    public static void assertContainsInCollection(java.util.Collection<?> collection, Object element, String message) {
+    public void assertContainsInCollection(java.util.Collection<?> collection, Object element, String message) {
         Assert.assertTrue(collection.contains(element), message);
     }
 
@@ -234,7 +253,7 @@ public class Assertions {
      * @param element    The element to find
      * @param message    The message to display if the assertion fails
      */
-    public static void assertNotContainsInCollection(java.util.Collection<?> collection, Object element, String message) {
+    public void assertNotContainsInCollection(java.util.Collection<?> collection, Object element, String message) {
         Assert.assertFalse(collection.contains(element), message);
     }
 
@@ -244,7 +263,7 @@ public class Assertions {
      * @param expectedException The class of the expected exception
      * @param runnable          The code to execute that should throw the exception
      */
-    public static void assertThrows(Class<? extends Throwable> expectedException, Runnable runnable) {
+    public void assertThrows(Class<? extends Throwable> expectedException, Runnable runnable) {
         Assert.assertThrows(expectedException, (Assert.ThrowingRunnable) runnable);
     }
 
@@ -255,7 +274,7 @@ public class Assertions {
      * @param expected The expected integer value
      * @param message  The message to display if the assertion fails
      */
-    public static void assertGreaterThan(int actual, int expected, String message) {
+    public void assertGreaterThan(int actual, int expected, String message) {
         Assert.assertTrue(actual > expected, message);
     }
 
@@ -266,7 +285,7 @@ public class Assertions {
      * @param expected The expected integer value
      * @param message  The message to display if the assertion fails
      */
-    public static void assertLessThan(int actual, int expected, String message) {
+    public void assertLessThan(int actual, int expected, String message) {
         Assert.assertTrue(actual < expected, message);
     }
 
@@ -277,7 +296,7 @@ public class Assertions {
      * @param expected The expected integer value
      * @param message  The message to display if the assertion fails
      */
-    public static void assertGreaterThanOrEqual(int actual, int expected, String message) {
+    public void assertGreaterThanOrEqual(int actual, int expected, String message) {
         Assert.assertTrue(actual >= expected, message);
     }
 
@@ -288,7 +307,7 @@ public class Assertions {
      * @param expected The expected integer value
      * @param message  The message to display if the assertion fails
      */
-    public static void assertLessThanOrEqual(int actual, int expected, String message) {
+    public void assertLessThanOrEqual(int actual, int expected, String message) {
         Assert.assertTrue(actual <= expected, message);
     }
 
@@ -298,7 +317,7 @@ public class Assertions {
      * @param timeoutInMillis The maximum time to wait in milliseconds
      * @param runnable        The code to execute
      */
-    public static void assertTimeout(long timeoutInMillis, Runnable runnable) {
+    public void assertTimeout(long timeoutInMillis, Runnable runnable) {
         long startTime = System.currentTimeMillis();
         runnable.run();
         long duration = System.currentTimeMillis() - startTime;
@@ -313,7 +332,7 @@ public class Assertions {
      * @param tolerance The allowable difference
      * @param message   The message to display if the assertion fails
      */
-    public static void assertEqualsWithTolerance(double actual, double expected, double tolerance, String message) {
+    public void assertEqualsWithTolerance(double actual, double expected, double tolerance, String message) {
         Assert.assertTrue(Math.abs(actual - expected) <= tolerance, message);
     }
 
@@ -378,7 +397,7 @@ public class Assertions {
      * @param actual  The string to check
      * @param message The message to display if the assertion fails
      */
-    public static void assertNotEmpty(String actual, String message) {
+    public void assertNotEmpty(String actual, String message) {
         Assert.assertFalse(actual.isEmpty(), message);
     }
 
@@ -388,7 +407,7 @@ public class Assertions {
      * @param actual  The string to check
      * @param message The message to display if the assertion fails
      */
-    public static void assertEmpty(String actual, String message) {
+    public void assertEmpty(String actual, String message) {
         Assert.assertTrue(actual.isEmpty(), message);
     }
 
@@ -399,7 +418,7 @@ public class Assertions {
      * @param message The message to display if the assertion fails
      */
 
-    public static void assertIsEmpty(String string, String message) {
+    public void assertIsEmpty(String string, String message) {
         Assert.assertTrue(string.isEmpty(), message);
     }
 
@@ -410,7 +429,7 @@ public class Assertions {
      * @param size       The expected size of the collection
      * @param message    The message to display if the assertion fails
      */
-    public static void assertSize(java.util.Collection<?> collection, int size, String message) {
+    public void assertSize(java.util.Collection<?> collection, int size, String message) {
         Assert.assertEquals(collection.size(), size, message);
     }
 
@@ -420,7 +439,7 @@ public class Assertions {
      * @param collection The collection to check
      * @param message    The message to display if the assertion fails
      */
-    public static void assertIsEmptyCollection(java.util.Collection<?> collection, String message) {
+    public void assertIsEmptyCollection(java.util.Collection<?> collection, String message) {
         Assert.assertTrue(collection.isEmpty(), message);
     }
 
@@ -430,7 +449,7 @@ public class Assertions {
      * @param collection The collection to check
      * @param message    The message to display if the assertion fails
      */
-    public static void assertIsNotEmptyCollection(java.util.Collection<?> collection, String message) {
+    public void assertIsNotEmptyCollection(java.util.Collection<?> collection, String message) {
         Assert.assertFalse(collection.isEmpty(), message);
     }
 
@@ -441,7 +460,7 @@ public class Assertions {
      * @param expected The expected value
      * @param message  The message to display if the assertion fails
      */
-    public static void assertEqualDouble(double actual, double expected, String message) {
+    public void assertEqualDouble(double actual, double expected, String message) {
         Assert.assertEquals(actual, expected, message);
     }
 
@@ -452,7 +471,7 @@ public class Assertions {
      * @param expected The expected value
      * @param message  The message to display if the assertion fails
      */
-    public static void assertNotEqualDouble(double actual, double expected, String message) {
+    public void assertNotEqualDouble(double actual, double expected, String message) {
         Assert.assertNotEquals(actual, expected, message);
     }
 
@@ -463,7 +482,7 @@ public class Assertions {
      * @param expected The expected value
      * @param message  The message to display if the assertion fails
      */
-    public static void assertEqualFloat(float actual, float expected, String message) {
+    public void assertEqualFloat(float actual, float expected, String message) {
         Assert.assertEquals(actual, expected, message);
     }
 
@@ -474,7 +493,7 @@ public class Assertions {
      * @param expected The expected value
      * @param message  The message to display if the assertion fails
      */
-    public static void assertNotEqualFloat(float actual, float expected, String message) {
+    public void assertNotEqualFloat(float actual, float expected, String message) {
         Assert.assertNotEquals(actual, expected, message);
     }
 
@@ -485,7 +504,7 @@ public class Assertions {
      * @param expected The expected value
      * @param message  The message to display if the assertion fails
      */
-    public static void assertEqualLong(long actual, long expected, String message) {
+    public void assertEqualLong(long actual, long expected, String message) {
         Assert.assertEquals(actual, expected, message);
     }
 
@@ -496,7 +515,7 @@ public class Assertions {
      * @param expected The expected value
      * @param message  The message to display if the assertion fails
      */
-    public static void assertNotEqualLong(long actual, long expected, String message) {
+    public void assertNotEqualLong(long actual, long expected, String message) {
         Assert.assertNotEquals(actual, expected, message);
     }
 
@@ -507,7 +526,7 @@ public class Assertions {
      * @param expected The expected value
      * @param message  The message to display if the assertion fails
      */
-    public static void assertEqualShort(short actual, short expected, String message) {
+    public void assertEqualShort(short actual, short expected, String message) {
         Assert.assertEquals(actual, expected, message);
     }
 
@@ -518,7 +537,7 @@ public class Assertions {
      * @param expected The expected value
      * @param message  The message to display if the assertion fails
      */
-    public static void assertNotEqualShort(short actual, short expected, String message) {
+    public void assertNotEqualShort(short actual, short expected, String message) {
         Assert.assertNotEquals(actual, expected, message);
     }
 
@@ -529,7 +548,7 @@ public class Assertions {
      * @param expected The expected value
      * @param message  The message to display if the assertion fails
      */
-    public static void assertEqualByte(byte actual, byte expected, String message) {
+    public void assertEqualByte(byte actual, byte expected, String message) {
         Assert.assertEquals(actual, expected, message);
     }
 
@@ -540,7 +559,7 @@ public class Assertions {
      * @param expected The expected value
      * @param message  The message to display if the assertion fails
      */
-    public static void assertNotEqualByte(byte actual, byte expected, String message) {
+    public void assertNotEqualByte(byte actual, byte expected, String message) {
         Assert.assertNotEquals(actual, expected, message);
     }
 
@@ -550,7 +569,7 @@ public class Assertions {
      * @param collection The collection to check
      * @param message    The message to display if any element is null
      */
-    public static void assertAllElementsNotNull(java.util.Collection<?> collection, String message) {
+    public void assertAllElementsNotNull(java.util.Collection<?> collection, String message) {
         for (Object item : collection) {
             assertNotNull(item, message);
         }
@@ -562,7 +581,7 @@ public class Assertions {
      * @param condition The condition to check
      * @param message   The message to display if the assertion fails
      */
-    public static void assertCondition(boolean condition, String message) {
+    public void assertCondition(boolean condition, String message) {
         Assert.assertTrue(condition, message);
     }
 
@@ -573,7 +592,7 @@ public class Assertions {
      * @param regex   The regex pattern
      * @param message The message to display if the assertion fails
      */
-    public static void assertMatches(String actual, String regex, String message) {
+    public void assertMatches(String actual, String regex, String message) {
         Assert.assertTrue(actual.matches(regex), message);
     }
 
@@ -584,7 +603,7 @@ public class Assertions {
      * @param expectedSize The expected size of the list
      * @param message      The message to display if the assertion fails
      */
-    public static void assertListSize(java.util.List<?> list, int expectedSize, String message) {
+    public void assertListSize(java.util.List<?> list, int expectedSize, String message) {
         Assert.assertEquals(list.size(), expectedSize, message);
     }
 
@@ -595,7 +614,7 @@ public class Assertions {
      * @param expectedClass The expected class type
      * @param message       The message to display if the assertion fails
      */
-    public static void assertInstanceOf(Object actual, Class<?> expectedClass, String message) {
+    public void assertInstanceOf(Object actual, Class<?> expectedClass, String message) {
         Assert.assertTrue(expectedClass.isInstance(actual), message);
     }
 }

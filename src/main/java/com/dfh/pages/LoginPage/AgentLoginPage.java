@@ -18,7 +18,7 @@ public class AgentLoginPage {
     public AgentLoginPage(WebDriver driver) {
         this.driver = driver;
         actions = new Actions(driver);
-        assertions = new Assertions();
+        assertions = new Assertions(driver);
     }
 
     private static final By agentEmailAddress = By.xpath("//input[@name='username']");
