@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d890b25-f45e-4d6b-8fcf-f4c51e34cdad" name="Changes" comment="updated browser setup">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dfh/Exceptions/HouseholdPageException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dfh/pages/CommonPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dfh/pages/CommonPages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dfh/pages/LoginPage/AgentLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dfh/pages/LoginPage/AgentLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dfh/pages/householdPage/HouseHoldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dfh/pages/householdPage/HouseHoldPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dfh/pages/summaryPage/SummaryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dfh/pages/summaryPage/SummaryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dfh/stepdefinitions/SummarySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dfh/stepdefinitions/SummarySteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dfh/utils/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dfh/utils/Actions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dfh/utils/Assertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dfh/utils/Assertions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Summary.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Summary.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dfh/stepdefinitions/SummarySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dfh/stepdefinitions/SummarySteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dfh/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dfh/runner/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,15 +204,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dfh/stepdefinitions/SummarySteps.java</url>
-          <line>67</line>
-          <properties class="com.dfh.stepdefinitions.SummarySteps" method="theFollowingComponentsShouldBeVisible">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -4,7 +4,6 @@ import com.dfh.Exceptions.SummaryPageException;
 import com.dfh.constants.FrameworkConstants;
 import com.dfh.utils.Actions;
 import com.dfh.utils.Assertions;
-import lombok.Data;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;

@@ -1251,3 +1251,366 @@ Driver info: jdk.proxy2.$Proxy33
 17:26:22.603 [main]INFO  com.dfh.hooks.Hooks - Execution Ended for Scenario: Validate visibility of all components on the summary page
 17:26:22.619 [main]INFO  com.dfh.hooks.Hooks -  Scenario Validate visibility of all components on the summary page Execution Status : PASSED
 17:26:22.619 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:30:42.225 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:30:42.241 [main]INFO  com.dfh.hooks.Hooks - Execution Started for Scenario: Validate the Summary page functionality by selecting change income option
+18:30:42.257 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+18:30:44.514 [main]INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.204 (resolved driver for Chrome 131)
+18:30:44.648 [main]INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\chandrasekhar.alti\.cache\selenium\chromedriver\win64\131.0.6778.204\chromedriver.exe
+18:30:57.843 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/auth/login
+18:30:58.283 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='button' and text()='Agent']
+18:30:58.676 [main]INFO  com.dfh.utils.Actions - Set text kalyan on By.xpath: //input[@name='username']
+18:30:58.972 [main]INFO  com.dfh.utils.Actions - Set text kalyan@123 on By.xpath: //input[@type='password']
+18:30:59.350 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='submit' and text()='Login']
+18:31:00.666 [main]INFO  com.dfh.utils.Actions - Set text 433332 on By.xpath: //form/descendant::input
+18:31:00.981 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/descendant::button
+18:31:00.982 [main]INFO  com.dfh.hooks.Hooks - Login to the application successfully !
+18:31:03.396 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:31:03.465 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:31:03.465 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:31:05.398 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:31:05.455 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:31:05.455 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:31:06.119 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: (//button[@value='Yes'])[1]
+18:31:06.507 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: (//button[@value='Yes'])[2]
+18:31:06.948 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@role='combobox']
+18:31:07.307 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //span[contains(text(),'Change Income')]
+18:31:07.307 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Successfully selected type of change: change income
+18:31:07.671 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/child::button
+18:31:09.752 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/household
+18:31:09.836 [main]INFO  com.dfh.hooks.Hooks - Running tear down after test case
+18:31:09.836 [main]INFO  com.dfh.hooks.Hooks - Starting Hooks tear down function
+18:31:09.836 [main]INFO  com.dfh.hooks.Hooks - Scenario passed so no need for the screenshot
+18:31:14.959 [main]INFO  com.dfh.hooks.Hooks - Execution Ended for Scenario: Validate the Summary page functionality by selecting change income option
+18:31:14.960 [main]INFO  com.dfh.hooks.Hooks -  Scenario Validate the Summary page functionality by selecting change income option Execution Status : PASSED
+18:31:14.960 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:31:15.112 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:31:15.112 [main]INFO  com.dfh.hooks.Hooks - Execution Started for Scenario: Validate navigating from the summary page to the household page by selecting Residential status option
+18:31:15.169 [main]INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.204 (resolved driver for Chrome 131)
+18:31:15.263 [main]INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\chandrasekhar.alti\.cache\selenium\chromedriver\win64\131.0.6778.204\chromedriver.exe
+18:31:25.218 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/auth/login
+18:31:25.663 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='button' and text()='Agent']
+18:31:26.027 [main]INFO  com.dfh.utils.Actions - Set text kalyan on By.xpath: //input[@name='username']
+18:31:26.307 [main]INFO  com.dfh.utils.Actions - Set text kalyan@123 on By.xpath: //input[@type='password']
+18:31:26.595 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='submit' and text()='Login']
+18:31:27.774 [main]INFO  com.dfh.utils.Actions - Set text 433332 on By.xpath: //form/descendant::input
+18:31:28.224 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/descendant::button
+18:31:28.225 [main]INFO  com.dfh.hooks.Hooks - Login to the application successfully !
+18:31:30.110 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:31:30.373 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:31:30.373 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:31:32.295 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:31:32.370 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:31:32.370 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:31:32.760 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: (//button[@value='Yes'])[1]
+18:31:33.083 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: (//button[@value='Yes'])[2]
+18:31:33.533 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@role='combobox']
+18:31:33.928 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //span[contains(text(),'Residential Status')]
+18:31:33.928 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Successfully selected type of change: Residential Status
+18:31:34.335 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/child::button
+18:31:36.372 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/household
+18:31:36.469 [main]INFO  com.dfh.hooks.Hooks - Running tear down after test case
+18:31:36.478 [main]INFO  com.dfh.hooks.Hooks - Starting Hooks tear down function
+18:31:36.478 [main]INFO  com.dfh.hooks.Hooks - Scenario passed so no need for the screenshot
+18:31:41.536 [main]INFO  com.dfh.hooks.Hooks - Execution Ended for Scenario: Validate navigating from the summary page to the household page by selecting Residential status option
+18:31:41.542 [main]INFO  com.dfh.hooks.Hooks -  Scenario Validate navigating from the summary page to the household page by selecting Residential status option Execution Status : PASSED
+18:31:41.543 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:31:41.656 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:31:41.656 [main]INFO  com.dfh.hooks.Hooks - Execution Started for Scenario: Validate navigating from the summary page to the household page by selecting other option
+18:31:41.717 [main]INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.204 (resolved driver for Chrome 131)
+18:31:41.803 [main]INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\chandrasekhar.alti\.cache\selenium\chromedriver\win64\131.0.6778.204\chromedriver.exe
+18:32:35.015 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:32:35.031 [main]INFO  com.dfh.hooks.Hooks - Execution Started for Scenario: Validate the Summary page functionality by selecting change income option
+18:32:35.031 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+18:32:35.441 [main]INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.204 (resolved driver for Chrome 131)
+18:32:35.488 [main]INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\chandrasekhar.alti\.cache\selenium\chromedriver\win64\131.0.6778.204\chromedriver.exe
+18:32:45.173 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/auth/login
+18:32:45.526 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='button' and text()='Agent']
+18:32:45.773 [main]INFO  com.dfh.utils.Actions - Set text kalyan on By.xpath: //input[@name='username']
+18:32:46.114 [main]INFO  com.dfh.utils.Actions - Set text kalyan@123 on By.xpath: //input[@type='password']
+18:32:46.441 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='submit' and text()='Login']
+18:32:47.706 [main]INFO  com.dfh.utils.Actions - Set text 433332 on By.xpath: //form/descendant::input
+18:32:48.097 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/descendant::button
+18:32:48.097 [main]INFO  com.dfh.hooks.Hooks - Login to the application successfully !
+18:32:50.149 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:32:50.225 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:32:50.226 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:32:52.252 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:32:52.294 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:32:52.302 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:32:52.909 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: (//button[@value='Yes'])[1]
+18:32:53.232 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: (//button[@value='Yes'])[2]
+18:32:53.605 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@role='combobox']
+18:32:53.920 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //span[contains(text(),'Change Income')]
+18:32:53.923 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Successfully selected type of change: change income
+18:32:54.192 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/child::button
+18:32:56.072 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/household
+18:32:56.146 [main]INFO  com.dfh.hooks.Hooks - Running tear down after test case
+18:32:56.146 [main]INFO  com.dfh.hooks.Hooks - Starting Hooks tear down function
+18:32:56.146 [main]INFO  com.dfh.hooks.Hooks - Scenario passed so no need for the screenshot
+18:33:02.958 [main]INFO  com.dfh.hooks.Hooks - Execution Ended for Scenario: Validate the Summary page functionality by selecting change income option
+18:33:02.958 [main]INFO  com.dfh.hooks.Hooks -  Scenario Validate the Summary page functionality by selecting change income option Execution Status : PASSED
+18:33:02.958 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:33:03.021 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:33:03.021 [main]INFO  com.dfh.hooks.Hooks - Execution Started for Scenario: Validate navigating from the summary page to the household page by selecting Residential status option
+18:33:03.036 [main]INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.204 (resolved driver for Chrome 131)
+18:33:03.068 [main]INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\chandrasekhar.alti\.cache\selenium\chromedriver\win64\131.0.6778.204\chromedriver.exe
+18:33:12.968 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/auth/login
+18:33:13.311 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='button' and text()='Agent']
+18:33:13.512 [main]INFO  com.dfh.utils.Actions - Set text kalyan on By.xpath: //input[@name='username']
+18:33:13.661 [main]INFO  com.dfh.utils.Actions - Set text kalyan@123 on By.xpath: //input[@type='password']
+18:33:13.961 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='submit' and text()='Login']
+18:33:15.128 [main]INFO  com.dfh.utils.Actions - Set text 433332 on By.xpath: //form/descendant::input
+18:33:15.551 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/descendant::button
+18:33:15.552 [main]INFO  com.dfh.hooks.Hooks - Login to the application successfully !
+18:33:17.609 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:33:17.717 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:33:17.719 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:33:19.688 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:33:19.735 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:33:19.742 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:33:20.032 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: (//button[@value='Yes'])[1]
+18:33:20.334 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: (//button[@value='Yes'])[2]
+18:33:20.676 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@role='combobox']
+18:33:20.979 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //span[contains(text(),'Residential Status')]
+18:33:20.979 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Successfully selected type of change: Residential Status
+18:33:21.319 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/child::button
+18:33:23.434 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/household
+18:33:23.505 [main]INFO  com.dfh.hooks.Hooks - Running tear down after test case
+18:33:23.505 [main]INFO  com.dfh.hooks.Hooks - Starting Hooks tear down function
+18:33:23.505 [main]INFO  com.dfh.hooks.Hooks - Scenario passed so no need for the screenshot
+18:33:32.510 [main]INFO  com.dfh.hooks.Hooks - Execution Ended for Scenario: Validate navigating from the summary page to the household page by selecting Residential status option
+18:33:32.510 [main]INFO  com.dfh.hooks.Hooks -  Scenario Validate navigating from the summary page to the household page by selecting Residential status option Execution Status : PASSED
+18:33:32.510 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:33:32.582 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:33:32.582 [main]INFO  com.dfh.hooks.Hooks - Execution Started for Scenario: Validate navigating from the summary page to the household page by selecting other option
+18:33:32.598 [main]INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.204 (resolved driver for Chrome 131)
+18:33:32.629 [main]INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\chandrasekhar.alti\.cache\selenium\chromedriver\win64\131.0.6778.204\chromedriver.exe
+18:33:42.355 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/auth/login
+18:33:42.692 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='button' and text()='Agent']
+18:33:42.903 [main]INFO  com.dfh.utils.Actions - Set text kalyan on By.xpath: //input[@name='username']
+18:33:43.232 [main]INFO  com.dfh.utils.Actions - Set text kalyan@123 on By.xpath: //input[@type='password']
+18:33:43.586 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='submit' and text()='Login']
+18:33:44.848 [main]INFO  com.dfh.utils.Actions - Set text 433332 on By.xpath: //form/descendant::input
+18:33:45.251 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/descendant::button
+18:33:45.251 [main]INFO  com.dfh.hooks.Hooks - Login to the application successfully !
+18:33:47.510 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:33:47.569 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:33:47.569 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:33:49.497 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:33:49.545 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:33:49.545 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:33:49.867 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: (//button[@value='Yes'])[1]
+18:33:50.149 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: (//button[@value='Yes'])[2]
+18:33:50.462 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@role='combobox']
+18:33:50.788 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //span[contains(text(),'Other')]
+18:33:50.788 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Successfully selected type of change: Other
+18:33:51.082 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/child::button
+18:33:53.038 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/household
+18:33:53.103 [main]INFO  com.dfh.hooks.Hooks - Running tear down after test case
+18:33:53.103 [main]INFO  com.dfh.hooks.Hooks - Starting Hooks tear down function
+18:33:53.103 [main]INFO  com.dfh.hooks.Hooks - Scenario passed so no need for the screenshot
+18:34:01.918 [main]INFO  com.dfh.hooks.Hooks - Execution Ended for Scenario: Validate navigating from the summary page to the household page by selecting other option
+18:34:01.918 [main]INFO  com.dfh.hooks.Hooks -  Scenario Validate navigating from the summary page to the household page by selecting other option Execution Status : PASSED
+18:34:01.918 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:34:01.997 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:34:01.997 [main]INFO  com.dfh.hooks.Hooks - Execution Started for Scenario: Validate error handling when no selection is made
+18:34:02.013 [main]INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.204 (resolved driver for Chrome 131)
+18:34:02.028 [main]INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\chandrasekhar.alti\.cache\selenium\chromedriver\win64\131.0.6778.204\chromedriver.exe
+18:34:11.819 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/auth/login
+18:34:12.219 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='button' and text()='Agent']
+18:34:12.495 [main]INFO  com.dfh.utils.Actions - Set text kalyan on By.xpath: //input[@name='username']
+18:34:12.795 [main]INFO  com.dfh.utils.Actions - Set text kalyan@123 on By.xpath: //input[@type='password']
+18:34:13.102 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='submit' and text()='Login']
+18:34:14.246 [main]INFO  com.dfh.utils.Actions - Set text 433332 on By.xpath: //form/descendant::input
+18:34:14.616 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/descendant::button
+18:34:14.616 [main]INFO  com.dfh.hooks.Hooks - Login to the application successfully !
+18:34:16.625 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:34:16.672 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:34:16.672 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:34:18.561 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:34:18.613 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:34:18.613 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:34:18.613 [main]INFO  com.dfh.stepdefinitions.SummarySteps - User does not select any options in summary form
+18:34:19.004 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@role='combobox']
+18:34:19.293 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //span[contains(text(),'Other')]
+18:34:19.293 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Successfully selected type of change: Other
+18:34:19.542 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/child::button
+18:34:19.764 [main]INFO  com.dfh.hooks.Hooks - Running tear down after test case
+18:34:19.764 [main]INFO  com.dfh.hooks.Hooks - Starting Hooks tear down function
+18:34:19.764 [main]INFO  com.dfh.hooks.Hooks - Scenario passed so no need for the screenshot
+18:34:24.727 [main]INFO  com.dfh.hooks.Hooks - Execution Ended for Scenario: Validate error handling when no selection is made
+18:34:24.727 [main]INFO  com.dfh.hooks.Hooks -  Scenario Validate error handling when no selection is made Execution Status : PASSED
+18:34:24.727 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:34:24.822 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:34:24.822 [main]INFO  com.dfh.hooks.Hooks - Execution Started for Scenario: Validate visibility of all components on the summary page
+18:34:24.838 [main]INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.204 (resolved driver for Chrome 131)
+18:34:24.854 [main]INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\chandrasekhar.alti\.cache\selenium\chromedriver\win64\131.0.6778.204\chromedriver.exe
+18:34:34.514 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/auth/login
+18:34:34.752 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='button' and text()='Agent']
+18:34:34.992 [main]INFO  com.dfh.utils.Actions - Set text kalyan on By.xpath: //input[@name='username']
+18:34:35.209 [main]INFO  com.dfh.utils.Actions - Set text kalyan@123 on By.xpath: //input[@type='password']
+18:34:35.475 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='submit' and text()='Login']
+18:34:36.628 [main]INFO  com.dfh.utils.Actions - Set text 433332 on By.xpath: //form/descendant::input
+18:34:36.977 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/descendant::button
+18:34:36.977 [main]INFO  com.dfh.hooks.Hooks - Login to the application successfully !
+18:34:39.113 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:34:39.199 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:34:39.199 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:34:41.102 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:34:41.146 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:34:41.146 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:34:41.420 [main]INFO  com.dfh.utils.Assertions - Text validation passed for Change in Circumstances
+18:34:41.668 [main]INFO  com.dfh.utils.Assertions - Text validation passed for Summary
+18:34:41.892 [main]INFO  com.dfh.utils.Assertions - Text validation passed for Income
+18:34:42.056 [main]INFO  com.dfh.utils.Assertions - Text validation passed for Expenditure
+18:34:42.249 [main]INFO  com.dfh.utils.Assertions - Text validation passed for Disposable Income
+18:34:42.445 [main]INFO  com.dfh.utils.Assertions - Text validation passed for Term Left to Pay
+18:34:42.445 [main]INFO  com.dfh.hooks.Hooks - Running tear down after test case
+18:34:42.445 [main]INFO  com.dfh.hooks.Hooks - Starting Hooks tear down function
+18:34:42.445 [main]INFO  com.dfh.hooks.Hooks - Scenario passed so no need for the screenshot
+18:34:47.561 [main]INFO  com.dfh.hooks.Hooks - Execution Ended for Scenario: Validate visibility of all components on the summary page
+18:34:47.566 [main]INFO  com.dfh.hooks.Hooks -  Scenario Validate visibility of all components on the summary page Execution Status : PASSED
+18:34:47.566 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:52:18.115 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:52:18.131 [main]INFO  com.dfh.hooks.Hooks - Execution Started for Scenario: Validate the Summary page functionality by selecting change income option
+18:52:18.148 [main]INFO  com.dfh.utils.PropertyLoader - Properties file loaded successfully
+18:52:31.321 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/auth/login
+18:52:31.807 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='button' and text()='Agent']
+18:52:32.179 [main]INFO  com.dfh.utils.Actions - Set text kalyan on By.xpath: //input[@name='username']
+18:52:32.528 [main]INFO  com.dfh.utils.Actions - Set text kalyan@123 on By.xpath: //input[@type='password']
+18:52:32.922 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='submit' and text()='Login']
+18:52:34.107 [main]INFO  com.dfh.utils.Actions - Set text 433332 on By.xpath: //form/descendant::input
+18:52:34.531 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/descendant::button
+18:52:34.531 [main]INFO  com.dfh.hooks.Hooks - Login to the application successfully !
+18:52:36.763 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:52:36.822 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:52:36.822 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:52:38.777 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:52:38.827 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:52:38.835 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:52:39.461 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: (//button[@value='Yes'])[1]
+18:52:39.811 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: (//button[@value='Yes'])[2]
+18:52:40.225 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@role='combobox']
+18:52:40.557 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //span[contains(text(),'Change Income')]
+18:52:40.558 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Successfully selected type of change: change income
+18:52:41.012 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/child::button
+18:52:42.987 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/household
+18:52:43.053 [main]INFO  com.dfh.hooks.Hooks - Running tear down after test case
+18:52:43.053 [main]INFO  com.dfh.hooks.Hooks - Starting Hooks tear down function
+18:52:43.053 [main]INFO  com.dfh.hooks.Hooks - Scenario passed so no need for the screenshot
+18:52:48.480 [main]INFO  com.dfh.hooks.Hooks - Execution Ended for Scenario: Validate the Summary page functionality by selecting change income option
+18:52:48.480 [main]INFO  com.dfh.hooks.Hooks -  Scenario Validate the Summary page functionality by selecting change income option Execution Status : PASSED
+18:52:48.480 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:52:48.544 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:52:48.544 [main]INFO  com.dfh.hooks.Hooks - Execution Started for Scenario: Validate navigating from the summary page to the household page by selecting Residential status option
+18:52:58.185 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/auth/login
+18:52:58.569 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='button' and text()='Agent']
+18:52:58.859 [main]INFO  com.dfh.utils.Actions - Set text kalyan on By.xpath: //input[@name='username']
+18:52:59.233 [main]INFO  com.dfh.utils.Actions - Set text kalyan@123 on By.xpath: //input[@type='password']
+18:52:59.596 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='submit' and text()='Login']
+18:53:00.783 [main]INFO  com.dfh.utils.Actions - Set text 433332 on By.xpath: //form/descendant::input
+18:53:01.232 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/descendant::button
+18:53:01.233 [main]INFO  com.dfh.hooks.Hooks - Login to the application successfully !
+18:53:03.172 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:53:03.201 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:53:03.201 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:53:05.177 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:53:05.224 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:53:05.224 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:53:05.552 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: (//button[@value='Yes'])[1]
+18:53:05.860 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: (//button[@value='Yes'])[2]
+18:53:06.250 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@role='combobox']
+18:53:06.585 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //span[contains(text(),'Residential Status')]
+18:53:06.585 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Successfully selected type of change: Residential Status
+18:53:06.864 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/child::button
+18:53:08.885 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/household
+18:53:09.168 [main]INFO  com.dfh.hooks.Hooks - Running tear down after test case
+18:53:09.168 [main]INFO  com.dfh.hooks.Hooks - Starting Hooks tear down function
+18:53:09.168 [main]INFO  com.dfh.hooks.Hooks - Scenario passed so no need for the screenshot
+18:53:14.181 [main]INFO  com.dfh.hooks.Hooks - Execution Ended for Scenario: Validate navigating from the summary page to the household page by selecting Residential status option
+18:53:14.181 [main]INFO  com.dfh.hooks.Hooks -  Scenario Validate navigating from the summary page to the household page by selecting Residential status option Execution Status : PASSED
+18:53:14.181 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:53:14.226 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:53:14.226 [main]INFO  com.dfh.hooks.Hooks - Execution Started for Scenario: Validate navigating from the summary page to the household page by selecting other option
+18:53:24.505 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/auth/login
+18:53:24.872 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='button' and text()='Agent']
+18:53:25.182 [main]INFO  com.dfh.utils.Actions - Set text kalyan on By.xpath: //input[@name='username']
+18:53:25.481 [main]INFO  com.dfh.utils.Actions - Set text kalyan@123 on By.xpath: //input[@type='password']
+18:53:25.757 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='submit' and text()='Login']
+18:53:26.963 [main]INFO  com.dfh.utils.Actions - Set text 433332 on By.xpath: //form/descendant::input
+18:53:27.398 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/descendant::button
+18:53:27.398 [main]INFO  com.dfh.hooks.Hooks - Login to the application successfully !
+18:53:29.316 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:53:29.365 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:53:29.365 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:53:31.310 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:53:31.364 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:53:31.364 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:53:31.701 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: (//button[@value='Yes'])[1]
+18:53:32.025 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: (//button[@value='Yes'])[2]
+18:53:32.398 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@role='combobox']
+18:53:32.741 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //span[contains(text(),'Other')]
+18:53:32.741 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Successfully selected type of change: Other
+18:53:33.054 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/child::button
+18:53:34.847 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/household
+18:53:34.920 [main]INFO  com.dfh.hooks.Hooks - Running tear down after test case
+18:53:34.920 [main]INFO  com.dfh.hooks.Hooks - Starting Hooks tear down function
+18:53:34.920 [main]INFO  com.dfh.hooks.Hooks - Scenario passed so no need for the screenshot
+18:53:43.537 [main]INFO  com.dfh.hooks.Hooks - Execution Ended for Scenario: Validate navigating from the summary page to the household page by selecting other option
+18:53:43.541 [main]INFO  com.dfh.hooks.Hooks -  Scenario Validate navigating from the summary page to the household page by selecting other option Execution Status : PASSED
+18:53:43.541 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:53:43.576 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:53:43.576 [main]INFO  com.dfh.hooks.Hooks - Execution Started for Scenario: Validate error handling when no selection is made
+18:53:52.828 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/auth/login
+18:53:53.138 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='button' and text()='Agent']
+18:53:53.308 [main]INFO  com.dfh.utils.Actions - Set text kalyan on By.xpath: //input[@name='username']
+18:53:53.444 [main]INFO  com.dfh.utils.Actions - Set text kalyan@123 on By.xpath: //input[@type='password']
+18:53:53.571 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='submit' and text()='Login']
+18:53:54.694 [main]INFO  com.dfh.utils.Actions - Set text 433332 on By.xpath: //form/descendant::input
+18:53:55.127 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/descendant::button
+18:53:55.128 [main]INFO  com.dfh.hooks.Hooks - Login to the application successfully !
+18:53:57.042 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:53:57.094 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:53:57.094 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:53:58.871 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:53:58.918 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:53:58.918 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:53:58.921 [main]INFO  com.dfh.stepdefinitions.SummarySteps - User does not select any options in summary form
+18:53:59.263 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@role='combobox']
+18:53:59.587 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //span[contains(text(),'Other')]
+18:53:59.587 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Successfully selected type of change: Other
+18:53:59.858 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/child::button
+18:54:00.079 [main]INFO  com.dfh.hooks.Hooks - Running tear down after test case
+18:54:00.079 [main]INFO  com.dfh.hooks.Hooks - Starting Hooks tear down function
+18:54:00.079 [main]INFO  com.dfh.hooks.Hooks - Scenario passed so no need for the screenshot
+18:54:04.899 [main]INFO  com.dfh.hooks.Hooks - Execution Ended for Scenario: Validate error handling when no selection is made
+18:54:04.899 [main]INFO  com.dfh.hooks.Hooks -  Scenario Validate error handling when no selection is made Execution Status : PASSED
+18:54:04.899 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:54:04.954 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
+18:54:04.954 [main]INFO  com.dfh.hooks.Hooks - Execution Started for Scenario: Validate visibility of all components on the summary page
+18:54:14.524 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/auth/login
+18:54:14.785 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='button' and text()='Agent']
+18:54:15.010 [main]INFO  com.dfh.utils.Actions - Set text kalyan on By.xpath: //input[@name='username']
+18:54:15.164 [main]INFO  com.dfh.utils.Actions - Set text kalyan@123 on By.xpath: //input[@type='password']
+18:54:15.401 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //button[@type='submit' and text()='Login']
+18:54:16.722 [main]INFO  com.dfh.utils.Actions - Set text 433332 on By.xpath: //form/descendant::input
+18:54:17.116 [main]INFO  com.dfh.utils.Actions - Clicked on Element: By.xpath: //form/descendant::button
+18:54:17.116 [main]INFO  com.dfh.hooks.Hooks - Login to the application successfully !
+18:54:19.141 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:54:19.210 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:54:19.210 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:54:21.072 [main]INFO  com.dfh.utils.Actions - Navigated to URL : https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:54:21.148 [main]INFO  com.dfh.utils.Assertions - URL validation passed: https://reviewportalqa.dfh.co.uk/review/433332/summary
+18:54:21.148 [main]INFO  com.dfh.pages.summaryPage.SummaryPage - Navigated to summary page successfully
+18:54:21.404 [main]INFO  com.dfh.utils.Assertions - Text validation passed for Change in Circumstances
+18:54:21.628 [main]INFO  com.dfh.utils.Assertions - Text validation passed for Summary
+18:54:21.809 [main]INFO  com.dfh.utils.Assertions - Text validation passed for Income
+18:54:21.969 [main]INFO  com.dfh.utils.Assertions - Text validation passed for Expenditure
+18:54:22.176 [main]INFO  com.dfh.utils.Assertions - Text validation passed for Disposable Income
+18:54:22.365 [main]INFO  com.dfh.utils.Assertions - Text validation passed for Term Left to Pay
+18:54:22.365 [main]INFO  com.dfh.hooks.Hooks - Running tear down after test case
+18:54:22.365 [main]INFO  com.dfh.hooks.Hooks - Starting Hooks tear down function
+18:54:22.365 [main]INFO  com.dfh.hooks.Hooks - Scenario passed so no need for the screenshot
+18:54:27.421 [main]INFO  com.dfh.hooks.Hooks - Execution Ended for Scenario: Validate visibility of all components on the summary page
+18:54:27.421 [main]INFO  com.dfh.hooks.Hooks -  Scenario Validate visibility of all components on the summary page Execution Status : PASSED
+18:54:27.421 [main]INFO  com.dfh.hooks.Hooks - *****************************************************************************************
