@@ -16,17 +16,17 @@ public class Assertions {
 
     private static Logger log;
     private WebDriver driver;
-    private Actions actions;
+    private UI UI;
 
     public Assertions(WebDriver driver) {
         this.driver = driver;
         log = LogManager.getLogger(Assertions.class);
-        actions = new Actions(driver);
+        UI = new UI(driver);
     }
 
     public void assertText(By elementLocator, String expectedText) {
-        actions.isElementDisplayed(elementLocator);
-        String actualText = actions.getElementText(elementLocator);
+        UI.isElementDisplayed(elementLocator);
+        String actualText = UI.getElementText(elementLocator);
         Assert.assertEquals(
                 actualText,
                 expectedText,

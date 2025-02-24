@@ -5,6 +5,7 @@ import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
 
@@ -12,16 +13,16 @@ import java.time.Duration;
 import java.util.Set;
 
 
-public class Actions {
+public class UI {
 
     private WebDriver driver;
     private final long DEFAULT_TIMEOUT = 10;
     private final long SMALL_TIMEOUT = 5;
     private static Logger log;
 
-    public Actions(WebDriver driver) {
+    public UI(WebDriver driver) {
         this.driver = driver != null ? driver : DriverManager.getDriver();
-        log = LogManager.getLogger(Actions.class);
+        log = LogManager.getLogger(UI.class);
     }
 
     /**
@@ -220,6 +221,26 @@ public class Actions {
         js.executeScript("arguments[0].scrollIntoView(false);", driver.findElement(by));
         log.info("Scrolled to element: " + by.toString());
     }
+
+    public void scrollIntoElement(By by) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(false);", driver.findElement(by));
+        log.info("Scrolled to element: " + by.toString());
+    }
+
+    public void scrollToElement(By by) {
+        Actions actions = new Actions(driver);        ;
+        actions.scrollToElement(this.driver.findElement(by)).perform();
+        log.info("Scrolled to element: " + by.toString());
+    }
+
+    public void scrollElementToMiddle(By by) {
+        int windowsHeight = driver.manage().window().getSize().height;
+        Actions actions = new Actions(driver);        ;
+        actions.scrollToElement(this.driver.findElement(by)).perform();
+        log.info("Scrolled to element: " + by.toString());
+    }
+
 
     public boolean waitForAlertPresent() {
         return waitForAlertPresent((int) DEFAULT_TIMEOUT);

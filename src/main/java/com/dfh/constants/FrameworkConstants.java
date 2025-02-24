@@ -18,15 +18,16 @@ public final class FrameworkConstants {
         // Prevent instantiation
     }
 
-    public static final String APPLICATION_URL = getRequiredProperty("APP_URL");
+//    public static final String APPLICATION_URL = getRequiredProperty("APP_URL");
     public static final String APP_BASE_URL = getRequiredProperty("APP_BASE_URL");
+    public static final String LOGIN_PARAM = getRequiredProperty("LOGIN_URL");
     public static final String HEADLESS = getRequiredProperty("HEADLESS");
     public static final String BROWSER = getRequiredProperty("BROWSER_NAME");
     public static final int BROWSER_HEIGHT = getRequiredIntProperty("BROWSER_HEIGHT");
     public static final int BROWSER_WIDTH = getRequiredIntProperty("BROWSER_WIDTH");
 
-    public static final String AGENT_NAME = getRequiredProperty("USER_NAME");
-    public static final String AGENT_PASSWORD = getRequiredProperty("USER_PASSWORD");
+    public static final String USER_NAME = getRequiredProperty("USER_NAME");
+    public static final String PASSWORD = getRequiredProperty("USER_PASSWORD");
     public static final String AGENT_ID = getRequiredProperty("AGENT_ID");
     public static final int IMPLICIT_WAIT = getRequiredIntProperty("WAIT_IMPLICIT");
     public static final int EXPLICIT_WAIT = getRequiredIntProperty("WAIT_EXPLICIT");

@@ -38,16 +38,6 @@ public class Hooks {
 
     }
 
-    @Before(order = 2)
-    public void launchApplication() throws InterruptedException {
-        CommonPages commonPages = new CommonPages();
-        commonPages.getAgentLoginPage().launchApplication();
-        commonPages.getAgentLoginPage().signInToApplication(FrameworkConstants.AGENT_NAME, FrameworkConstants.AGENT_PASSWORD);
-        commonPages.getCustomerReviewPage().enterCustomerDetailsAndClickOnSubmitButton(FrameworkConstants.AGENT_ID);
-        log.info("Login to the application successfully !");
-
-        commonPages.getSummaryPage().launchSummaryPage();
-    }
 
     @After
     public void tearDown(Scenario scenario) {

@@ -89,6 +89,7 @@ public enum BrowserFactory {
     }, EDGE {
         @Override
         public WebDriver createDriver() {
+            WebDriverManager.edgedriver().setup();
             return new EdgeDriver(getOptions());
         }
 
@@ -97,16 +98,16 @@ public enum BrowserFactory {
 
             EdgeOptions options = new EdgeOptions();
             Map<String, Object> preferences = new HashMap<String, Object>();
-            preferences.put("profile.default_content_setting_values.notifications", 2);
-            preferences.put("credentials_enable_service", false);
-            preferences.put("profile.password_manager_enabled", false);
-            preferences.put("autofill.profile_enabled", false);
-            options.setExperimentalOption("preferences", preferences);
-
-            options.addArguments("--disable-extensions");
-            options.addArguments("--disable-infobars");
-            options.addArguments("--disable-notifications");
-            options.addArguments("--remote-allow-origins=*");
+//            preferences.put("profile.default_content_setting_values.notifications", 2);
+//            preferences.put("credentials_enable_service", false);
+//            preferences.put("profile.password_manager_enabled", false);
+//            preferences.put("autofill.profile_enabled", false);
+//            options.setExperimentalOption("preferences", preferences);
+//
+//            options.addArguments("--disable-extensions");
+//            options.addArguments("--disable-infobars");
+//            options.addArguments("--disable-notifications");
+//            options.addArguments("--remote-allow-origins=*");
 
             options.setAcceptInsecureCerts(true);
 
@@ -115,7 +116,7 @@ public enum BrowserFactory {
                 options.addArguments("window-size=1800,900");
             }
 
-            return null;
+            return options;
         }
     }, SAFARI {
         @Override
